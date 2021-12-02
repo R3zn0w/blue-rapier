@@ -1,0 +1,92 @@
+@keyframes color_anim {
+  from {
+    color: crimson;
+  }
+  to {
+    color: aqua;
+  }
+}
+
+@-webkit-keyframes color_anim {
+  from {
+    color: crimson;
+  }
+  to {
+    color: aqua;
+  }
+}
+
+h1#nav_title {
+  color: crimson;
+  animation: color_anim 2s infinite alternate;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box {
+    background-color: #eff;
+    border: 2px solid #a8a8a8;
+    box-shadow: 2px 2px 4px grey;
+    margin: 10px 25px 5px 25px;
+    padding: 10px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box {
+    background-color: #eff;
+    border: 2px solid #a8a8a8;
+    box-shadow: 2px 2px 4px grey;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 95% !important;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body {
+  font-size: 1.2vw;
+}
+
+aside {
+  min-width: 360px;
+  width: 45%;
+}
+footer {
+  /* Specyfikacja wyglądu */
+}
+header {
+  /* Specyfikacja wyglądu */
+}
+main {
+  min-width: 360px;
+  width: 45%;
+}
+nav {
+  min-width: 120px;
+  width: 15%;
+}
+nav ul {
+  /* Specyfikacja wyglądu */
+}
+nav li {
+  /* Specyfikacja wyglądu */
+}
