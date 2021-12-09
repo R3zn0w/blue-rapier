@@ -58,19 +58,7 @@ describe("Funkcja litery()", function () {
   });
 });
 
-describe("Funkcja litery()", function () {
-  it("Zwraca 0 dla 111", function () {
-    expect(litery("111")).to.equal(0);
-  });
-  it("Zwraca 7 dla a$%^!dsW1@1_1aaa_", function () {
-    expect(litery("a$%^!dsW1@1_1aaa_")).to.equal(7);
-  });
-  it("Zwraca 6 dla asdasd", function () {
-    expect(litery("asdasd")).to.equal(6);
-  });
-});
-
-describe("hooks", function () {
+describe("Funkcja suma()", function () {
   before(function () {
     var added = 0;
   });
